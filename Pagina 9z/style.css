@@ -1,0 +1,412 @@
+@import url('http://fonts.cdnfonts.com/css/evogria'); 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+:root{
+    --primary: #6302c4;
+    --secondary: #000;
+    --light: #f3f3f3f3;
+    --dark: rgb(0, 0, 0);
+}
+
+body  {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.fontH {
+    font-size: 20px;
+}
+
+.fontItems{
+    font-family: 'Evogria', sans-serif;                                           
+}
+
+.fontItems2{
+    font-family: 'Oswald', sans-serif;
+    color: #000000;
+}
+
+.Fblock-grid{
+    background-color: #000000;
+    display:grid;
+    grid-template-areas:
+    'header header header header'
+    'main main main main'
+    'mitad1 mitad1 mitad2 mitad2'
+    ;
+    grid-template-rows: 300px auto 300px;
+}
+
+.slick-slide {
+    margin: 0px 10px;
+}
+
+.slick-slide{
+    width: 100%;
+}
+
+.csgo h1{
+    color: #4b0081;
+    display: flex;
+    justify-content: center;
+    font-family: 'Evogria', sans-serif;
+}
+
+.letras p{
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    font-family: 'Evogria', sans-serif;
+}
+
+.gridItem1{
+    grid-area: header;
+    background-color: #4b0081;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridItem2{
+    grid-area: main; 
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridItem4{
+    grid-area: mitad1;  
+    background-color: #56008c;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.gridItem5{
+    grid-area: mitad2;    
+    background-color: #620096;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+    
+.card {
+margin: 100px auto 0;
+width: 400px;
+height: 600px;
+}
+
+.card__inner {
+width: 100%;
+height: 100%;
+transition: transform 1s;
+transform-style: preserve-3d;
+cursor: pointer;
+position: relative;
+}
+
+.card__inner.is-flipped{
+    transform: rotateY(180deg);
+}
+
+.card__face{
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+overflow: hidden;
+border-radius: 16;
+box-shadow: 0px 3px 18px 3px #4b0081;
+}
+
+.card__face--front{
+    background-image: linear-gradient( to bottom right, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 5px 0 5px;
+}
+
+.card__face h2 {
+    color: #ffffff;
+    position: absolute;
+    bottom: 50px;
+    font-family: 'Evogria', sans-serif;
+}
+
+.card__body h3, h4, h5, p{
+    color: #ffffff;
+    font-family: 'Evogria', sans-serif;
+}
+
+.card__body h4{
+    font-size: 15px;
+}
+
+.card__body h5{
+    font-size: 17px;
+}
+
+.card__body p{
+    font-size: 15px;
+    text-align: justify;
+    margin: 1%;
+}
+
+
+.card__face--back {
+    background-color: var(--dark);
+    transform: rotateY(180deg);
+}
+
+.card__content {
+width: 100%;
+height: 100%;
+}
+
+.card__header {
+    position: relative;
+    padding: 30px 30px 40px;    
+}
+
+.card__header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+}
+
+.imgs {
+    display: block;
+    width: 340px;
+    height: 340px;    
+}
+
+.circulo{
+    background-color: rgb(0, 0, 0);
+    border-radius: 80px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mx-auto{
+ width: 100px;
+ 
+}
+
+.mainlogo{
+    content: icon;
+}
+
+
+.lines li::after {
+    content: "";
+    background-color: #ffffff;
+    display: block;
+    transform: rotate(20deg);
+    position: absolute;
+    top: 0;
+    height: 80%;
+    width: 1px;
+}
+
+
+
+a p:hover{
+color:#5c2994;
+}
+
+.nav-link{
+color: rgb(255, 255, 255);
+}
+
+.circulofacu{
+    background-color: white;
+    border-radius: 80px;
+    height: 100px;
+    width: 100px;
+}
+
+.bi-person-circle {
+    font-size: 90px;
+    position: relative;
+}
+.facuimg{
+    content: icon;
+    border-radius: 80px;
+    height: 100px;
+    width: 100px;
+}
+
+
+.fontItemsText{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.BoxContain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Description{
+    color: white;
+    font-weight:bold ;
+}
+
+.disableds{
+    cursor: default;
+    pointer-events: none;
+    text-decoration:none;
+    color: #5c2994;
+}
+
+.navbar-toggler-icon{
+    color: #ffffff;
+}
+
+.containerForm{
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    color: #ffffff;
+    
+}
+.headerText{
+    margin: 0 20px 60px 0px;
+    
+}
+.formContact{
+width: fit-content;
+}
+.form-label{
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.btn-outline-light:hover{
+    color: #56008c;
+}
+
+.navbar-toggler-icon{
+    background-color: white;
+}
+
+.containerQS {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bgVideo{
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.btnSend {
+   background-color:rgb(0, 0, 0);
+   color:#ffffff;
+}
+
+.btnSend:hover {
+    color:#4b0081;
+ }
+
+ 
+.container404 {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.subContainer{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index404 {
+    text-decoration: none;
+    color: #373737;
+}
+
+.index404:hover {
+    color: #5c2994;
+}
+
+.bi-emoji-frown {
+    font-size: 150px;
+}
+
+.flexCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.Logo9z{
+    filter: opacity(35%);
+}
+
+.botones {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 3%;
+}
+
+.botones a{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+@media (max-width:991px) {
+    .lines li::after{
+        display: none;
+    }
+    .lines {
+        display: flex;
+        align-items: center;
+    }
+    .containerQS {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+

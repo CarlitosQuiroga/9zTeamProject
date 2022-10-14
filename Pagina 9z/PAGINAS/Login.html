@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../Assets/favicon.png" />
+    <link rel="stylesheet" href="../styleLogin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="h-100 gradient-form" style="background-color: #eee;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-10">
+              <div class="card rounded-3 text-black">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="card-body p-md-5 mx-md-4">
+      
+                      <div class="text-center">
+                        <img src="../Assets/9zLogo.png"
+                          style="width: 185px;" alt="logo">
+                        <h4 class="mt-1 mb-5 pb-1">Somos 9zTeam</h4>
+                      </div>
+      
+                      <form name="formLogin">
+                        <p>Porfavor ingrese su cuenta</p>
+      
+                        <div class="form-outline mb-4">
+                          <input name="userN" type="userN" id="form2Example11" class="form-control"
+                            placeholder="Nombre de usuario" />
+                          <label class="form-label" for="form2Example11">Usuario</label>
+                        </div>
+      
+                        <div class="form-outline mb-4">
+                          <input name="passW" type="password" id="form2Example22" class="form-control" />
+                          <label class="form-label" for="form2Example22">Contraseña</label>
+                        </div>
+      
+                        <div class="text-center pt-1 mb-5 pb-1">
+                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" onclick="validationsLogin()" type="button">Iniciar Sesion</button>
+                          <a class="text-muted" href="#!">Olvido su contraseña?</a>
+                        </div>
+      
+                        <div class="d-flex align-items-center justify-content-center pb-4">
+                          <p class="mb-0 me-2">No tienes una cuenta?</p>
+                          <a href="../404 ERROR/error404.html">
+                          <button type="button" class="btn btn-outline-danger" >Crear una</button>
+                          </a>
+                        </div>
+      
+                      </form>
+      
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                    <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                      <h4 class="mb-4">Somos mas que un equipo de esports.</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="../JS/Login.js"></script>
+</body>
+</html>
