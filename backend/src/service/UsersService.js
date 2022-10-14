@@ -111,12 +111,11 @@ module.exports = class UsersService {
    */
   static async findAll(req, res) {
     try {
+   
       logger.info("buscando")
-      const users = await userReq.find({}).select("-_id").select("-__v"); 
-      res.setHeader("content-type", "application/json");
-      res.json({ users: users });
-      logger.info(users);
-      res.status(200);
+      const users = await userReq.find({}).select("-_id").select("-__v");
+      res.json({ userReq: users });
+      res.status(200)
     } catch (error) {
       res.status(400);
       res.json({ error : error });

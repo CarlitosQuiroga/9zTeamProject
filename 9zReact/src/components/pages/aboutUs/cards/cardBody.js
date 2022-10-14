@@ -61,6 +61,7 @@ const cards = [
 
 function BodyCard() {
     return (
+    <div className='bodyAbout'>
       <div className="container cardContainer">
       <div className="row h-100">
         <div class="flex-wrap col d-flex flex-column flex-md-row justify-content-around align-items-center">
@@ -69,6 +70,7 @@ function BodyCard() {
           ))}
         </div>
       </div>
+    </div>
     </div>
     );
   }

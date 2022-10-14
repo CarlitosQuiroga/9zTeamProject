@@ -4,7 +4,7 @@ module.exports = class StudentService {
     static async findOne(req, res) {
         const { username, password } = req.body;
         try {
-          const user = await Student.findOne({ username }).select("-_id").select("-__v");
+          const user = await User.findOne({ username }).select("-_id").select("-__v");
           if(user){
             if(user.password === password){
                 res.json({ data: "logged" });
