@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
-import './style.css'
+import "./style.css";
+import TopNav from "../../TopNav/TopNav";
+import Footer from "../../Footer/Footer";
 const { loginUser } = require("../../../service/api");
 
 const Login = () => {
-  const [refresh, setRefresh] = useState(0);
-  const [studentTableData, setStudentTableData] = useState({ student: [] });
+  const [setRefresh] = useState(0);
   const [userFormData, setUserFormData] = useState({
     username: "",
     password: "",
@@ -28,33 +29,39 @@ const Login = () => {
     });
   };
   return (
-    <Form className="form" onSubmit={handleSubmit}>
-    <div className="containerFormLogin">
-   
-    <Form.Group className="mb-3" controlId="formBasicUsername">
-      <Form.Label>Username</Form.Label>
-      <Form.Control
-        type="username"
-        placeholder="Username"
-        onChange={handleInputChange}
-        name="username"
-      />
-    </Form.Group>
+    <div className="containerLogin">
+      <TopNav />
+      <div className="containerLoginChild">
+      <Form className="formLogin" onSubmit={handleSubmit}>
+        <div className="containerFormLogin text-center">
+           <h1>LOGIN</h1>
+          <Form.Group className="mb-3" controlId="formBasicUsername">
+            <Form.Label>Username</Form.Label>
+            <Form.Control
+              type="username"
+              placeholder="Username"
+              onChange={handleInputChange}
+              name="username"
+            />
+          </Form.Group>
 
-    <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>Password</Form.Label>
-      <Form.Control
-        type="password"
-        placeholder="Password"
-        onChange={handleInputChange}
-        name="password"
-      />
-    </Form.Group>
-    <Button className="w-100" variant="primary" type="submit">
-      Login
-    </Button>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              type="password"
+              placeholder="Password"
+              onChange={handleInputChange}
+              name="password"
+            />
+          </Form.Group>
+          <Button className="w-100" variant="primary" type="submit">
+            Login
+          </Button>
+        </div>
+      </Form>
     </div>
-  </Form>
+      <Footer />
+    </div>
   );
 };
 

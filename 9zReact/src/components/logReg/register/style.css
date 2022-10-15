@@ -1,16 +1,35 @@
-.container-xxl {
+.container-fluid {
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    background-image: radial-gradient(rgb(0, 0, 0) 0%, rgb(50, 3, 94) 100%);
 }
+
+.containerBodySign {
+       display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    }
+
+
+
 .form{
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    
 }
 .containerForms {
-    background-color: aqua;
     padding: 50px;
 }
+
+.mb-3{
+    color: white;
+}
+
+
+/* .container-fluid img {position: absolute;} */

@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import SignUp from "./SignUpForm";
-import { Form, Button } from "react-bootstrap";
-import './style.css';
-const { saveUser } = require("../../../service/api");
+import TopNav from "../../TopNav/TopNav";
+import Footer from "../../Footer/Footer";
+import "./style.css";
 
 const SignUpBd = () => {
-  
   return (
     <>
-    <div className="container-xxl">
-        <SignUp/>
+      <TopNav />
+      <div className="container-fluid">
+        <div className="containerBodySign">
+          <SignUp />
+        </div>
       </div>
+      <Footer />
     </>
   );
 };
